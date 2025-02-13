@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel="stylesheet" href="letter.css">
+    <title>Valentine</title>
+</head>
+<body>
+    <div class="container p-3">
+        <div class="d-flex justify-content-center ">
+            <div class="d-flex flex-column justify-content-center" id="container">
+                <h1 class="fw-bold text-center mb-5">TO MY EVERYTHING, HAPPY VALENTINE’S DAY!!</h1>
+                <p class="letter">
+                    I love and cherish you very much. Thank you for the love, the comfort, and for being there.
+                    You are the best thing that has ever happened to my life. Happy Valentine's day langging!!!
+                </p>
+                <div class="row justify-content-center mt-4 gap-3 gap-md-0">
+                    <div class="col-8 col-md-3 d-flex justify-content-center">
+                        <img src="pic1.jpg" class="img-thumbnail" alt="camp_iro">
+                    </div>
+                    <div class="col-8 col-md-3 d-flex justify-content-center">
+                        <img src="pic2.jpg" class="img-thumbnail" alt="camp_iro">
+                    </div>
+                    <div class="col-8 col-md-3 d-flex justify-content-center">
+                        <img src="pic3.jpg" class="img-thumbnail" alt="camp_iro">
+                    </div>
+                    <div class="col-8 col-md-3 d-flex justify-content-center">
+                        <img src="pic4.jpg" class="img-thumbnail " alt="camp_iro">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get the current date
+        const today = new Date();
+        const month = today.getMonth() + 1; // Months are zero-based (0 = Jan, 1 = Feb, etc.)
+        const day = today.getDate();
+
+        // Get the content div
+        const contentDiv = document.getElementById("container");
+
+        // Change content based on the date
+        if (month === 2 && day !== 14) {
+            contentDiv.innerHTML = 
+            `
+            <h1 class='fw-bold text-center mb-5'>Oops! Surprise will only be available on February 14.</h1>
+            <div class="d-flex justify-content-center">
+                <a href="yippee.html" class="btn btn-danger d-flex align-items-center justify-content-center gap-2 p-2">
+                    Back
+                </a>
+            </div>
+            `;
+        }
+    </script>
+</body>
+</html>
